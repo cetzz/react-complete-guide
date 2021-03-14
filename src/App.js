@@ -6,8 +6,8 @@ class App extends Component {
     return (
       <div className="App">
        <h1>
-        a
-       </h1> //THIS IS JSX
+        Hola mundo!
+       </h1> I'm allowed to do this cause its nested inside the main element
       </div>
     );
     //return(React.createElement('div',{className:'App'},React.createElement('h1',null,'Hola mundo')));//this is the equivalent to the other code.
