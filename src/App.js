@@ -9,6 +9,7 @@ class App extends Component {
        <h1>
         Hola mundo!
        </h1> I'm allowed to do this cause its nested inside the main element
+      <br></br>
        <Person name='Max' age='28'/>
        <Person name='Lulu' age='15'>My hobby is to play videogames!</Person>
        <Person name='Manu' age='40'/>
