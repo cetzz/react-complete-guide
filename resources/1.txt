@@ -1,0 +1,22 @@
+1- Agregar React y React DOM como External Javascript
+2- Babel como preprocessor 
+3- each function has to do have Caps
+
+react demo:
+https://codepen.io/anon/pen/MELQaQ
+
+importante: los objetos y arrays son pointers
+si yo hago 
+const person={
+name:'Max'
+}
+y hago 
+const secondPerson=person
+y hago 
+person.name='manu'
+y hago console log de second person me va a salir manu como nombre
+si quiero copiarlo tengo que usar el spread
+osea
+const secondPerson={
+ ...person
+};
