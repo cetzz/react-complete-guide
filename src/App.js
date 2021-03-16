@@ -9,21 +9,22 @@ const app = props =>{
     {name:'Lulu', age:'15'},
     {name:'Manu', age:'40'}
 
-  ],
-  otherState:'some other value'
+  ]
 });
+
 const switchNameHandler = () =>{
   setPersonsState({
     persons: [
       { name: 'Maximilian', age:'28' },
       {name:'Lulu', age:'15'},
-      {name:'Manu', age:'41'}
+      {name:'Manu', age:'41'},
 
     ]
   });
-}
+};
 
-  render() {
+const [otherState, setOtherState] = useState('some other value');
+console.log(personsState,otherState);
     return (
       <div className="App">
        <h1>
@@ -38,10 +39,10 @@ const switchNameHandler = () =>{
     );
     //return(React.createElement('div',{className:'App'},React.createElement('h1',null,'Hola mundo')));//this is the equivalent to the other code.
   }
-}
+
 
 export default app;
-
+/*
 state ={
   persons: [
     { name: 'Max', age:'28' },
@@ -62,4 +63,4 @@ switchNameHandler = () =>{
 
     ]
   });
-}
+}*/
