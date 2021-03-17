@@ -31,13 +31,23 @@ nameChangedHandler =(event) =>{
   })
 }
 render () {
-    return (
+  const style ={
+    backgroundColor: 'red',
+    font: 'inherit',
+    boxShadow: '0 2px 3px #ccc',
+    border:'0em',
+    padding:'8px',
+    margin:'auto',
+    borderRadius:'1em'
+
+  }  
+  return (
       <div className="App">
        <h1>
         Hola mundo!
        </h1> I'm allowed to do this cause its nested inside the main element
       <br></br>
-      <p> <button onClick={() => this.switchNameHandler('Maxon')}> Switch Name</button></p>
+      <p> <button style={style} onClick={() => this.switchNameHandler('Maxon')}> Switch Name</button></p>
        <Person name={this.state.persons[0].name} age={this.state.persons[0].age}/>
        <Person 
        name={this.state.persons[1].name} 
